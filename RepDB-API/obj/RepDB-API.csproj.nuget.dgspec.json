@@ -1,0 +1,69 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/gururajan.padmanaban/vscode/workspaces/git_repos/RepDB-API/RepDB-API/RepDB-API.csproj": {}
+  },
+  "projects": {
+    "/Users/gururajan.padmanaban/vscode/workspaces/git_repos/RepDB-API/RepDB-API/RepDB-API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/gururajan.padmanaban/vscode/workspaces/git_repos/RepDB-API/RepDB-API/RepDB-API.csproj",
+        "projectName": "RepDB-API",
+        "projectPath": "/Users/gururajan.padmanaban/vscode/workspaces/git_repos/RepDB-API/RepDB-API/RepDB-API.csproj",
+        "packagesPath": "/Users/gururajan.padmanaban/.nuget/packages/",
+        "outputPath": "/Users/gururajan.padmanaban/vscode/workspaces/git_repos/RepDB-API/RepDB-API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/gururajan.padmanaban/vscode/workspaces/git_repos/NuGet.Config",
+          "/Users/gururajan.padmanaban/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/Users/gururajan.padmanaban/vscode/workspaces/dotnet_workspace/Athena-Core-ELFFeatureGenerator/Athena-Core-ELFFeatureGenerator/bin/Debug": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AWSSDK.SecretsManager": {
+              "target": "Package",
+              "version": "[3.7.302.29, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/7.0.100/libexec/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

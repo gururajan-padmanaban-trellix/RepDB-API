@@ -1,5 +1,5 @@
-using Avert.Automation.Support.HBGCommon;
-using McAfeeLabs.Automation.Component.HBGDriverEval;
+// using Avert.Automation.Support.HBGCommon;
+// using McAfeeLabs.Automation.Component.HBGDriverEval;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
@@ -11,7 +11,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace McAfeeLabs.Automation.Component.HBGController
+namespace RepDB_API
 {
     public class HashProperty
     {
@@ -60,31 +60,31 @@ namespace McAfeeLabs.Automation.Component.HBGController
             endDate = currentDate.ToString("yyyy-MM-dd");
         }
 
-        public async Task<string> GetClassificationTypeId(string md5)
-        {
-            DataAccessHBGeneric_CType classificationtype;
-            string classificationtypeid = string.Empty;
-            string url = $"{rootUrl}/file-classification/v1/md5/{md5}";
+        // public async Task<string> GetClassificationTypeId(string md5)
+        // {
+        //     DataAccessHBGeneric_CType classificationtype;
+        //     string classificationtypeid = string.Empty;
+        //     string url = $"{rootUrl}/file-classification/v1/md5/{md5}";
 
-            using (HttpClient client = new HttpClient())
-            {
-                client.DefaultRequestHeaders.Add("rep-auth-key", apiKey);
-                try
-                {
-                    HttpResponseMessage response = await client.GetAsync(url);
-                    string responseBody = await response.Content.ReadAsStringAsync();
-                    dynamic parsedResponse = JsonConvert.DeserializeObject(responseBody);
-                    classificationtypeid = parsedResponse.classificationtypeid;
-                    classificationtype = (DataAccessHBGeneric_CType)Enum.Parse(typeof(DataAccessHBGeneric_CType), classificationtypeid);
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.ToString());
-                    return null;
-                }
-                return classificationtype.ToString();
-            }
-        }
+        //     using (HttpClient client = new HttpClient())
+        //     {
+        //         client.DefaultRequestHeaders.Add("rep-auth-key", apiKey);
+        //         try
+        //         {
+        //             HttpResponseMessage response = await client.GetAsync(url);
+        //             string responseBody = await response.Content.ReadAsStringAsync();
+        //             dynamic parsedResponse = JsonConvert.DeserializeObject(responseBody);
+        //             classificationtypeid = parsedResponse.classificationtypeid;
+        //             classificationtype = (DataAccessHBGeneric_CType)Enum.Parse(typeof(DataAccessHBGeneric_CType), classificationtypeid);
+        //         }
+        //         catch (Exception ex)
+        //         {
+        //             Console.WriteLine(ex.ToString());
+        //             return null;
+        //         }
+        //         return classificationtype.ToString();
+        //     }
+        // }
 
         public async Task<Dictionary<string, object>> GetChimeraDriverHitsByVendor(string signatureName)
         {

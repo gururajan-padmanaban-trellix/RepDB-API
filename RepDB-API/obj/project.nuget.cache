@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "Nqbv+WwofRKi9z7D2f3KhoJG4Pi+MrVcnFw7SGxXFkIKp/tgM2vxu53S9MVbbHTC+PH9Zb5I8VqWckkXwkO98w==",
+  "dgSpecHash": "pZIImyk3UVUBPNragvFVRu0rSWQCdO0O7M37GKTJx2Qy6f4nDIX5IpW/DDagLOOFo2n9kWLOL/utxw4eP+pMmA==",
   "success": true,
   "projectFilePath": "/Users/gururajan.padmanaban/vscode/workspaces/git_repos/RepDB-API/RepDB-API/RepDB-API.csproj",
   "expectedPackageFiles": [
     "/Users/gururajan.padmanaban/.nuget/packages/awssdk.core/3.7.302.15/awssdk.core.3.7.302.15.nupkg.sha512",
-    "/Users/gururajan.padmanaban/.nuget/packages/awssdk.secretsmanager/3.7.302.29/awssdk.secretsmanager.3.7.302.29.nupkg.sha512"
+    "/Users/gururajan.padmanaban/.nuget/packages/awssdk.secretsmanager/3.7.302.29/awssdk.secretsmanager.3.7.302.29.nupkg.sha512",
+    "/Users/gururajan.padmanaban/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/Users/gururajan.padmanaban/.nuget/packages/system.configuration.configurationmanager/8.0.0/system.configuration.configurationmanager.8.0.0.nupkg.sha512",
+    "/Users/gururajan.padmanaban/.nuget/packages/system.diagnostics.eventlog/8.0.0/system.diagnostics.eventlog.8.0.0.nupkg.sha512",
+    "/Users/gururajan.padmanaban/.nuget/packages/system.security.cryptography.protecteddata/8.0.0/system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

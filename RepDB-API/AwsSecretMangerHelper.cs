@@ -4,7 +4,7 @@ using Amazon;
 using Amazon.SecretsManager;
 using Amazon.SecretsManager.Model;
 
-namespace McAfeeLabs.Automation.Component.HBGController
+namespace RepDB_API
 {
     class AWSSecretManagerHelper
     {
